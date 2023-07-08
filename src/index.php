@@ -71,32 +71,32 @@ require_once 'controllers/connection.php';
                 <?php require_once 'controllers/register.php'?>
                 <form class="registerForm" method="post" novalidate>
                     <div class="inputBox">
-                        <input type="text" name="formAccount" autocomplete="off" required>
-                        <span>Nombre de cuenta</span>
+                        <input type="text" id="formAccount" name="formAccount" autocomplete="off" required>
+                        <label for="formAccount">Usuario</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="formPseudo" autocomplete="off" required>
-                        <span>Apodo</span>
+                        <input type="text" id="formPseudo" name="formPseudo" autocomplete="off" required>
+                        <label for="formPseudo">Apodo</label>
                     </div>
                     <div class="inputBox">
-                        <input type="password" name="formPassword" autocomplete="off" required>
-                        <span>Contraseña</span>
+                        <input type="password" id="formPassword" name="formPassword" autocomplete="off" required>
+                        <label for="formPassword">Contraseña</label>
                     </div>
                     <div class="inputBox">
-                        <input type="password" name="formPasswordConf" autocomplete="off" required>
-                        <span>Confirmar contraseña</span>
+                        <input type="password" id="formPasswordConf" name="formPasswordConf" autocomplete="off" required>
+                        <label for="formPasswordConf">Confirmar contraseña</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="formEmail" autocomplete="off" required>
-                        <span>Correo electrónico</span>
+                        <input type="text" id="formEmail" name="formEmail" autocomplete="off" required>
+                        <label for="formEmail">Correo electrónico</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="formQuestion" autocomplete="off" required>
-                        <span>Pregunta secreta</span>
+                        <input type="text" id="formQuestion" name="formQuestion" autocomplete="off" required>
+                        <label for="formQuestion">Pregunta secreta</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="formReponse" autocomplete="off" required>
-                        <span>Respuesta secreta</span>
+                        <input type="text" id="formResponse" name="formReponse" autocomplete="off" required>
+                        <label for="formResponse">Respuesta secreta</label>
                     </div>
                     <button class="submitButton" name="register_validation" type="sumbit">Registrarse</button>
                 </form>

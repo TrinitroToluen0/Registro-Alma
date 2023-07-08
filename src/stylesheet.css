@@ -137,7 +137,7 @@ h3 {
     color: #FFF;
 }
 
-.registerForm .inputBox span {
+.registerForm .inputBox label {
     position: absolute;
     left: 0;
     bottom: 22px;
@@ -149,8 +149,8 @@ h3 {
     text-transform: uppercase;
 }
 
-.registerForm .inputBox input:focus~span,
-.registerForm .inputBox input:valid~span {
+.registerForm .inputBox input:focus~label,
+.registerForm .inputBox input:valid~label {
     color: #FFF;
     border-bottom: #FFF;
     font-size: 0.85em;
@@ -317,6 +317,9 @@ footer {
 }
 
 @media (max-width: 710px) {
+    body {
+        padding: 0;
+    }
     .welcome {
         width: 450px;
     }
