@@ -1,5 +1,4 @@
 <?php
-// Incluye el archivo de configuración
 require_once 'config.php';
 require_once 'controllers/connection.php';
 ?>

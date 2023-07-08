@@ -7,7 +7,7 @@ $db_nombre = 'php_sql';
 
 // Variables de branding
 $nombre_servidor = 'Alma';
-$widget_discord = 'https://discordapp.com/widget?id=1117663737768321054&theme=dark';
+$widget_discord = 'https://discordapp.com/widget?id=1117663737768321054&theme=dark'; //Solo poner el src
 
 // Variables para los enlaces de descarga
 $enlace_mediafire = 'http://www.mediafire.com';
