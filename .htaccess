@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /Registro-Alma
+
+# Redirigir /register a /register.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^register$ /register.php [L]
