@@ -105,7 +105,7 @@ require_once 'controllers/connection.php';
                 <div class="separator"></div>
                 <div class="flex">
                     <div class="ds-widget">
-                        <iframe title="Unirse a nuestro servidor de Discord" src="<?php echo $widget_discord;?>" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        <iframe title="Unirse a nuestro servidor de Discord" src="<?php echo $widget_discord;?>" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                     <div class="card-description">
                         <h3>¡Te invitamos a unirte a nuestro servidor de Discord!</h3>
