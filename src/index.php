@@ -123,16 +123,22 @@ require_once 'utils/errorHandler.php';
     <footer>
         <div class="footer-icons">
             <a title="Ve a nuestro Twitter" href="<?php echo $enlace_twitter;?>" class="icon-link">
-                <i class="fa fa-twitter"></i>
+                <i class="fa-brands fa-twitter"></i>
             </a>
             <a title="Ve a nuestro Instagram" href="<?php echo $enlace_instagram;?>" class="icon-link">
-                <i class="fa fa-instagram"></i>
+                <i class="fa-brands fa-instagram"></i>
             </a>
             <a title="Ve a nuestro Discord" href="<?php echo $enlace_discord;?>" class="icon-link">
                 <i class="fa-brands fa-discord"></i>
             </a>
             <a title="Ve a nuestro Tik Tok" href="<?php echo $enlace_tiktok;?>" class="icon-link">
-            <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a title="Ve a nuestro Facebook" href="<?php echo $enlace_facebook;?>" class="icon-link">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a title="Ve a nuestro WhatsApp" href="<?php echo $enlace_whatsapp;?>" class="icon-link">
+                <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
         <p class="footer-text">© 2023 Servidor <?php echo $nombre_servidor;?>. Todos los derechos reservados.</p>

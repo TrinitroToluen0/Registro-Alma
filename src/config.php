@@ -7,7 +7,7 @@ $db_nombre = 'xampauth';
 
 // Variables de branding
 $nombre_servidor = 'Alma';
-$descripcion_servidor =  'Aquí va la descripción del servidor';
+$descripcion_servidor =  'Somos el servidor privado de habla hispana más destacado y completo de Dofus 2.51 con la modalidad Ankalike.';
 $widget_discord = 'https://discordapp.com/widget?id=1117663737768321054&theme=dark'; //Solo poner el src
 
 // Variables para los enlaces de descarga
@@ -20,6 +20,8 @@ $enlace_twitter = 'http://twitter.com';
 $enlace_instagram = 'http://instagram.com';
 $enlace_discord = 'http://discord.com';
 $enlace_tiktok = 'http://tiktok.com';
+$enlace_facebook = 'http://facebook.com';
+$enlace_whatsapp = 'http://whatsapp.com';
 
 //Webhook de discord para registrar errores
 $error_handler = false; //Si deseas registros de errores, colocar "true", y si no, colocar "false". Esto puede hacer más lenta la página en caso de encontrar un error.
