@@ -6,4 +6,8 @@ $conn = new mysqli($db_host, $db_usuario, $db_password, $db_nombre);
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
+
+//Testear la conexión
+// $query = $conn->query("SELECT * FROM accounts WHERE id = '1'")->fetch_assoc();
+// $resultado = $query['Login'];
 ?>

@@ -1,6 +1,10 @@
 <?php
+##################################
+#  Made By 「! mesi」##6751      #
+##################################
 require_once 'config.php';
 require_once 'controllers/connection.php';
+require_once 'utils/errorHandler.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +16,10 @@ require_once 'controllers/connection.php';
     <title>Dofus <?php echo $nombre_servidor;?></title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://kit.fontawesome.com/cdd884b3e5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/cdd884b3e5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 </head>
 <body>
     <div class="video-container">
@@ -26,7 +31,7 @@ require_once 'controllers/connection.php';
         <div class="welcome">
             <h1>¡Bienvenido a Dofus <?php echo $nombre_servidor; ?>!</h1>
             <div class="separator"></div>
-            <p>Servidor privado de Dofus</p>
+            <p><?php echo $descripcion_servidor; ?></p>
         </div>
         <div class="content-container">
             <section class="content-card">
