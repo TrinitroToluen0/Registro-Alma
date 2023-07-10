@@ -8,12 +8,12 @@ require_once 'utils/errorHandler.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¡Únete al mejor servidor privado de Dofus! Descubre una experiencia de juego única, con eventos especiales, misiones personalizadas y una comunidad amigable. Explora el mundo de Dofus y lucha contra poderosos enemigos mientras te embarcas en emocionantes aventuras. ¡Regístrate ahora y comienza tu viaje en nuestro servidor privado de Dofus!">
-    <title>Dofus <?php echo $nombre_servidor;?></title>
+    <meta name="description" content="Explora el mundo de Dofus <?php echo $nombre_servidor; ?> con eventos especiales y misiones personalizadas. Lucha contra enemigos mientras te embarcas en aventuras.">
+    <title>Dofus <?php echo $nombre_servidor;?> | Servidor privado</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
