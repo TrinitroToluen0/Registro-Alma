@@ -42,15 +42,15 @@ require_once 'utils/errorHandler.php';
                         <div class="downloads-background"></div>
                         <div class="downloads">
                             <h3>Servidores de descarga</h3>
-                            <a target="_blank" href="<?php echo $enlace_mediafire; ?>" class="download-btn mediafire">
+                            <a title="Descarga por mediafire" target="_blank" href="<?php echo $enlace_mediafire; ?>" class="download-btn mediafire">
                                 <svg width="2250" height="1279" viewBox="-6.8887712 -3.69853465 81.96659882 46.80035628" xmlns="http://www.w3.org/2000/svg"><path d="m20.7 8.3a51.47 51.47 0 0 1 9.34 1c2.9.55 5.85 1.56 8.83 1.55 2.28 0 4.12-1.6 4.1-3.53s-1.85-3.57-4.17-3.56a13.35 13.35 0 0 0 -3.9.65c.33-.23.66-.47 1-.68a26.14 26.14 0 0 1 15.1-3.68c5.6.26 11.46 2 15.8 5.72a19.9 19.9 0 0 1 6.62 17.82 19.75 19.75 0 0 1 -12.17 15.07 24 24 0 0 1 -14.45.52c-6.2-1.58-11.64-5-17.48-7.54a46.86 46.86 0 0 0 -10.57-2.68h.05a9 9 0 0 0 4.1-.7c1.74-.83 1.73-2.83.83-4.3-1.07-1.73-3.23-2.44-5.1-3a24.36 24.36 0 0 0 -10-.48 15.06 15.06 0 0 0 -6.83 2.52 5.67 5.67 0 0 0 -1.8 2.2c3.08-8.53 9.2-7.57 13-9.9a2.16 2.16 0 0 0 -1.57-3.94 7.24 7.24 0 0 0 -2.92 1.46l-.85.65s3.04-5.17 13.04-5.17z" fill="#07f"/><path d="m23.64 23.78.06.06zm32.46-10.73c-4.08 0-5.76 2.57-10.18 5-7.65 4.18-12.2 2.4-12.2 2.62s3.1 1.53 10.7 5.22a27 27 0 0 0 11.73 3.15 8 8 0 1 0 0-16z" fill="#fff"/></svg>
                                 <span>Mediafire</span>
                             </a>
-				            <a target="_blank" href="<?php echo $enlace_drive; ?>" class="download-btn drive">
+				            <a title="Descarga por Google Drive" target="_blank" href="<?php echo $enlace_drive; ?>" class="download-btn drive">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2250" height="1279" viewBox="0 0 1443.061 1249.993"><path fill="#3777e3" d="M240.525 1249.993l240.492-416.664h962.044l-240.514 416.664z"/><path fill="#ffcf63" d="M962.055 833.329h481.006L962.055 0H481.017z"/><path fill="#11a861" d="M0 833.329l240.525 416.664 481.006-833.328L481.017 0z"/></svg>
                                 <span>Drive</span>
                             </a>
-                            <a target="_blank" href="<?php echo $enlace_mega; ?>" class="download-btn mega">
+                            <a title="Descarga por Mega" target="_blank" href="<?php echo $enlace_mega; ?>" class="download-btn mega">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2250" height="1279" viewBox="119.5 239.5 721 721"><circle cx="480" cy="600" r="360.5" fill="#d31b00"/><path fill="#fff" d="M267 454h85l128 130 129-130h82v293h-86V577.25L500.334 682h-40.668L355 577.25V747h-88z"/></svg>
                                 <span>Mega</span>
                             </a>
@@ -121,26 +121,44 @@ require_once 'utils/errorHandler.php';
         </div>
     </main>
     <footer>
-        <div class="footer-icons">
-            <a title="Ve a nuestro Twitter" href="<?php echo $enlace_twitter;?>" class="icon-link">
+    <div class="footer-icons">
+        <?php if (!empty($enlace_twitter)): ?>
+            <a title="Nuestro Twitter" href="<?php echo $enlace_twitter;?>" class="icon-link">
                 <i class="fa-brands fa-twitter"></i>
             </a>
-            <a title="Ve a nuestro Instagram" href="<?php echo $enlace_instagram;?>" class="icon-link">
+        <?php endif; ?>
+
+        <?php if (!empty($enlace_instagram)): ?>
+            <a title="Nuestro Instagram" href="<?php echo $enlace_instagram;?>" class="icon-link">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a title="Ve a nuestro Discord" href="<?php echo $enlace_discord;?>" class="icon-link">
+        <?php endif; ?>
+
+        <?php if (!empty($enlace_discord)): ?>
+            <a title="Nuestro Discord" href="<?php echo $enlace_discord;?>" class="icon-link">
                 <i class="fa-brands fa-discord"></i>
             </a>
-            <a title="Ve a nuestro Tik Tok" href="<?php echo $enlace_tiktok;?>" class="icon-link">
+        <?php endif; ?>
+
+        <?php if (!empty($enlace_tiktok)): ?>
+            <a title="Nuestro Tik Tok" href="<?php echo $enlace_tiktok;?>" class="icon-link">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a title="Ve a nuestro Facebook" href="<?php echo $enlace_facebook;?>" class="icon-link">
+        <?php endif; ?>
+
+        <?php if (!empty($enlace_facebook)): ?>
+            <a title="Nuestro Facebook" href="<?php echo $enlace_facebook;?>" class="icon-link">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a title="Ve a nuestro WhatsApp" href="<?php echo $enlace_whatsapp;?>" class="icon-link">
+        <?php endif; ?>
+
+        <?php if (!empty($enlace_whatsapp)): ?>
+            <a title="Nuestro WhatsApp" href="<?php echo $enlace_whatsapp;?>" class="icon-link">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-        </div>
+        <?php endif; ?>
+    </div>
+
         <p class="footer-text">© 2023 Servidor <?php echo $nombre_servidor;?>. Todos los derechos reservados.</p>
     </footer>
 </body>
